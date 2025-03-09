@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>CuteImage Gallery</h1>
+        <div class="controls-wrapper">
+            <div class="feature-controls">
+                <button class="feature-btn" id="slideshowToggle" title="Toggle Slideshow">▶️</button>
+                <span id="slideshowStatus" class="status-indicator">Slideshow Off</span>
+            </div>
+            <div class="theme-controls">
+                <button class="theme-btn" id="lightTheme" title="Light Theme">🌸</button>
+                <button class="theme-btn" id="darkTheme" title="Dark Theme">🌙</button>
+                <button class="theme-btn" id="forestTheme" title="Forest Theme">🌿</button>
+                <button class="theme-btn" id="oceanTheme" title="Ocean Theme">🌊</button>
+            </div>
+        </div>
+    </header>
+
+    <div class="gallery">
+        <!-- Images will be dynamically added here -->
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightbox-img">
+            <div class="lightbox-controls">
+                <button id="prevImage" class="lightbox-nav-btn">❮</button>
+                <button id="downloadImage" class="lightbox-btn">Download</button>
+                <button id="nextImage" class="lightbox-nav-btn">❯</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Image Gallery • Made with 💖</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
